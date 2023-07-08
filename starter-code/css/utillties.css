@@ -39,9 +39,10 @@
 .close__text,
 .directors__bg__2,
 .directors__bg__1,
-.clients__bg {
+.clients__bg,
+.contact__bg-2,
+.contact__bg-1 {
   position: absolute;
-  /* display: none; */
 }
 
 .nav__link:link,
@@ -49,7 +50,8 @@
 .contact,
 .reveal__text,
 .close__text,
-.director__social__box {
+.director__social__box,
+.submit {
   cursor: pointer;
 }
 
