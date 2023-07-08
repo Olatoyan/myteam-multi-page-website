@@ -138,9 +138,6 @@ body {
   border-radius: 50%;
 }
 
-.reveal__text {
-  background-color: #f67e7e;
-}
 .director__text__box {
   /* display: none; */
   display: flex;
@@ -167,7 +164,17 @@ body {
   fill: #fff;
 }
 
-.close__text {
+.director__social__img:hover {
+  fill: #f67e7e;
+}
+
+.reveal__text,
+.close__text:hover {
+  background-color: #f67e7e;
+}
+
+.close__text,
+.reveal__text:hover {
   background-color: #79c8c7;
 }
 

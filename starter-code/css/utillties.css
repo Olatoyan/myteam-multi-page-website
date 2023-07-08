@@ -46,7 +46,10 @@
 
 .nav__link:link,
 .nav__link:visited,
-.contact {
+.contact,
+.reveal__text,
+.close__text,
+.director__social__box {
   cursor: pointer;
 }
 
