@@ -16,6 +16,8 @@ const companyInput = document.querySelector(".company__input");
 const titleInput = document.querySelector(".title__input");
 const messageInput = document.querySelector(".message__input");
 const allInput = document.querySelectorAll(".input__field");
+const navBtn = document.querySelector(".mobile__nav");
+const header = document.querySelector(".header");
 
 const displayDirectorInfo = function (e) {
   const openIcon = e.target.classList.contains("reveal__text");
@@ -36,7 +38,7 @@ const displayDirectorInfo = function (e) {
     infoBox.style.visibility = "hidden";
   }
 };
-function validateForm() {
+const validateForm = function () {
   // Validate each field
   const isNameValid = validateField(nameInput);
   const isEmailValid = validateField(emailInput);
@@ -52,9 +54,17 @@ function validateForm() {
     isTitleValid &&
     isMessageValid
   );
-}
+};
 
-function validateField(input) {
+const displayNav = function (e) {
+  const openIcon = e.target.closest(".mobile__nav");
+
+  if (openIcon) {
+    header.classList.toggle("nav-open");
+  }
+};
+
+const validateField = function (input) {
   const errorMsg = input.nextElementSibling;
   // console.log(errorMsg);
   console.log(input.value.trim());
@@ -75,15 +85,17 @@ function validateField(input) {
 
     return true;
   }
+};
+if (window.location.pathname.endsWith("/contact.html")) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (validateForm()) {
+      form.submit();
+    }
+  });
 }
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  if (validateForm()) {
-    form.submit();
-  }
-});
 
 directorBox.forEach((box) => {
   box.addEventListener("click", displayDirectorInfo);
 });
+navBtn.addEventListener("click", displayNav);
