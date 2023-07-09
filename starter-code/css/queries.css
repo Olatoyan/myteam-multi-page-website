@@ -374,6 +374,12 @@
 @media (max-width: 37.5em) {
   .header {
     padding: 7rem 2.4rem 0;
+    gap: 0;
+  }
+  .nav {
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
   }
   .hero__container {
     padding: 8rem 2.4rem 20rem;

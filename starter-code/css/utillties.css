@@ -107,3 +107,8 @@
 .hidden {
   display: none;
 }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

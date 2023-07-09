@@ -4,6 +4,9 @@
 // close__text
 // reveal__text
 
+// const main = document.querySelector(".main");
+const heroSection = document.querySelector(".hero__section");
+const main = document.querySelector("main");
 const directorBox = document.querySelectorAll(".director__box");
 const directorTextBox = document.querySelectorAll(".director__text__box");
 const revealBox = document.querySelectorAll(".reveal__text");
@@ -99,3 +102,33 @@ directorBox.forEach((box) => {
   box.addEventListener("click", displayDirectorInfo);
 });
 navBtn.addEventListener("click", displayNav);
+
+// const obsCallback = function (entries, observer) {
+//   entries.forEach((entry) => {
+//     console.log(entry);
+//   });
+// };
+
+// const obsOptions = {
+//   root: null,
+//   threshold: [0, 0.2],
+// };
+
+// const observer = new IntersectionObserver(obsCallback, obsOptions);
+// observer.observe(heroSection);
+
+// const stickyNav = function (entries) {
+//   const [entry] = entries;
+//   console.log(entry);
+//   if (!entry.isIntersecting) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// };
+
+// const sectionObserver = new IntersectionObserver(stickyNav, {
+//   root: null,
+//   threshold: 0,
+// });
+// sectionObserver.observe(heroSection);
