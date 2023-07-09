@@ -110,5 +110,9 @@
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(6rem);
+}
+
+section {
+  transition: transform 1s, opacity 1s;
 }

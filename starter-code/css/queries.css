@@ -1,6 +1,6 @@
 @media (max-width: 93.75em) {
   .header {
-    padding: 7rem 14rem 0;
+    padding: 0 14rem;
   }
 
   .contact__container {
@@ -33,7 +33,7 @@
   }
 
   .header {
-    padding: 7rem 8rem 0;
+    padding: 0 8rem;
   }
   .hero__container {
     padding: 11rem 8rem 25rem;
@@ -193,7 +193,7 @@
 
 @media (max-width: 50em) {
   .header {
-    padding: 7rem 5rem 0;
+    padding: 0 5rem;
   }
   .hero__container {
     padding: 11rem 5rem 25rem;
@@ -373,7 +373,7 @@
 
 @media (max-width: 37.5em) {
   .header {
-    padding: 7rem 2.4rem 0;
+    padding: 0 2.4rem;
     gap: 0;
   }
   .nav {

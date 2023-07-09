@@ -16,11 +16,16 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  padding-top: 7rem;
+  position: relative;
+}
+
 .header {
   display: flex;
   align-items: center;
   gap: 8rem;
-  position: relative;
+  height: 7rem;
   padding: 0 8rem;
   justify-content: space-between;
   width: 100%;
