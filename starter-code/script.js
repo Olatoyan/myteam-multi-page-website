@@ -70,10 +70,7 @@ const displayNav = function (e) {
 
 const validateField = function (input) {
   const errorMsg = input.nextElementSibling;
-  // console.log(errorMsg);
-  console.log(input.value.trim());
   if (input.value.trim() === "") {
-    console.log(input);
     errorMsg.style.opacity = "1";
     errorMsg.style.visibility = "visible";
     input.style.borderBottom = "0.1rem solid #f67e7e";
@@ -119,11 +116,9 @@ navBtn.addEventListener("click", displayNav);
 // observer.observe(heroSection);
 
 // const navHeight = header.getBoundingClientRect().height;
-// console.log(navHeight);
 
 // const stickyNav = function (entries) {
 //   const [entry] = entries;
-//   console.log(entry);
 //   if (!entry.isIntersecting) {
 //     header.classList.add("sticky");
 //   } else {
@@ -143,7 +138,6 @@ const allSections = document.querySelectorAll("section");
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
   // if (!entry.isIntersecting) return;
   entry.target.classList.remove("section--hidden");
   observer.unobserve(entry.target);
