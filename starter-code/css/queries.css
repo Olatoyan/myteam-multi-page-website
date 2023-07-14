@@ -279,6 +279,12 @@
     margin-left: 0;
   }
 
+  .close-icon {
+    position: absolute;
+    top: 17%;
+    right: 9%;
+  }
+
   .mobile__nav {
     display: block;
   }
@@ -286,7 +292,7 @@
     background-color: #2c6269;
     border-radius: 1rem;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 75%;

@@ -22,6 +22,7 @@ const messageInput = document.querySelector(".message__input");
 const allInput = document.querySelectorAll(".input__field");
 const navBtn = document.querySelector(".mobile__nav");
 const header = document.querySelector(".header");
+const closeIcon = document.querySelector(".close-icon");
 
 const displayDirectorInfo = function (e) {
   const openIcon = e.target.classList.contains("reveal__text");
@@ -59,6 +60,10 @@ const validateForm = function () {
     isMessageValid
   );
 };
+
+closeIcon.addEventListener("click", function () {
+  header.classList.remove("nav-open");
+});
 
 const displayNav = function (e) {
   const openIcon = e.target.closest(".mobile__nav");
